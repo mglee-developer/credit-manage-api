@@ -58,11 +58,11 @@ src/main/java/com/example/credit_manage_api <br>
 
 ### 신용점수 API
 
-| Method | URL                 | 설명 | 인증 |
-| --- |---------------------|  | --- |
-| POST | /api/credit/score   | 신용점수 등록/수정 | ✅ |
-| POST | /api/credit/score   | 신용점수 조회 | ✅ |
-| GET | /api/credit/history | 신용점수 이력 조회 | ✅ |
+| Method | URL                  | 설명 | 인증 |
+| --- |----------------------| --- | --- |
+| POST | /api/credit/score    | 신용점수 등록/수정 | ✅ |
+| POST | /api/credit/score    | 신용점수 조회 | ✅ |
+| GET | /api/credit/history  | 신용점수 이력 조회 | ✅ |
 
 ### 대출 API
 
