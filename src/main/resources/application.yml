@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: credit-manage-api
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/credit_db?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # 서버 재시작 시 데이터 리셋되는 현상 방지
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+server:
+  port: 8080
+
+jwt:
+  secret: ccreditmanageapi-secret-key-must-be-at-least-256-bits-long
+  expiration: 86400000  # 24시간 (밀리초)
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
